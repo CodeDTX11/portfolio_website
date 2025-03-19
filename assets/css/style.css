@@ -1,0 +1,44 @@
+.gradient-background {
+  background: linear-gradient(300deg, #0a3c87, #51c6ea, #e1f0f5);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 10%;
+  max-height:max-content;
+  border-radius: 75%;
+}
+
+.background-img {
+  background-image: url('../images/Tsunami_by_hokusai.jpg');
+  opacity: 85%;
+  /* background-color: aqua; */
+  background-size: cover;
+  background-position: center; /* Optional: centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 75vh; /* Adjust the height as needed */
+  width: 100%; /* Ensure element has dimensions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+}
