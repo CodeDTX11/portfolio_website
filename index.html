@@ -2,126 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan's Site</title>
+  <link rel="icon" href="assets/images/dev-icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="gradient-background">
-    <!-- navbar -->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <!-- <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> -->
-                <span class="fs-4">Welcome</span>
-            </a>
+  <!-- navbar -->
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </header>
+  <div id="navbar" class="bg-dark">
+
+    <header class="d-flex flex-wrap justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <!-- <li class="nav-item"><a href="" class="nav-link" aria-current="page">Home</a></li> -->
+        <li class="nav-item"><a href="#about-me" class="nav-link ">About Me</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link ">Education</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link ">Projects</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link ">Skills</a></li>
+        <li class="nav-item"><a href="view_resume.html" class="nav-link ">View My Resumé</a></li>
+      </ul>
+    </header>
+  </div>
+  <!-- name section -->
+  <div>
+    <div class="p-5 text-center background-img">
+      <div class="container py-5">
+        <h1 class="display-1 fw-bold text-body-emphasis lh-1 mb-3">Dylan Messerly</h1>
+        <p class="col-lg-8 mx-auto lead fw-bold text-black fs-2 text-decoration-underline">Software Aficionado</p>
+      </div>
     </div>
-    <!-- name section -->
-    <div>
-        <div class="p-5 text-center background-img">
-            <div class="container py-5">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Dylan Messerly</h1>
-                <p class="col-lg-8 mx-auto lead fw-bold">
-                    Software Aficionado
-                </p>
-            </div>
+  </div>
+  <!-- about me -->
+  <div id="about-me" class="container px-4 py-5 bg-body-primary rounded-3">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-4">
+        <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid profile-img" alt="profile image"
+          width="350" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-8">
+        <h1 class="display-6 fw-bold text-body-emphasis text-decoration-underline mb-3">About Me</h1>
+        <p class="lead fw-medium">
+          Welcome to my webpage! My name is Dylan Messerly, and I am a graduate of Texas State University, where I
+          earned a Bachelor of Science in Computer Science with a minor in Mathematics.
+          <br><br>
+          During my time at university I specialized in C++ and developed a passion and tenacity for problem solving.
+          Since graduation I have continued my education by practicing data structures, algorithms and learning new
+          languages such as SQL and Javascript to name a few. I am currently learning Python and aim to be an AI expert.
+          <br><br>
+          I have internship experience as a software developer at Cook Systems where I worked individually and on teams
+          to develop web applications and APIs. I specialized in Javascript, Java, Angular and Spring Boot to bring
+          web applications to life and learned valuable skills in the process and had a blast doing it!
+          <br><br>
+          I am seeking a full time software developer position but I am also available for part-time or an
+          internship if that is all that is available.
+          <br><br>
+          I know I will be a great addition to your team. Let me know what great opportunities you have!
+          Check out my resumé and links!
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a class="btn btn-primary btn-lg px-4 me-md-2 text-black" href="assets/dylan_messerly_resume.pdf"
+            download>Download Resumé</a>
+          <a class="text-body-secondary mx-2" href="https://github.com/CodeDTX11" target="_blank"><img
+              src="assets/images/github.svg" height="50"></a>
+          <a class="text-body-secondary mx-2" href="https://www.linkedin.com/in/dylan-messerly/" target="_blank"><img
+              src="assets/images/linkedin.svg" height="50"></a>
+          <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
+              src="assets/images/leetcode-logo.png" height="50"></a>
+          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
         </div>
+      </div>
     </div>
-    <!-- about me -->
-    <div class="container px-4 py-5 bg-body-tertiary mt-5 rounded-3">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  </div>
+
+  <!-- education  -->
+
+  <div id="education" class="py-5 border-black border-top">
+
+    <h1 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Education</h1>
+
+    <div class="container bg-body-secondary rounded-3 py-3 my-3 opacity-85">
+      <div class="row p-2">
+        <div class="col-lg-8">
+          <h2 class="fw-bold">Texas State University</h2>
+          <h4 class="text-secondary">Bachelor of Science in Computer Science - Minor in Mathematics</h4>
+          <p class="lead mb-0">
+            Focused on C++ and Java development.
+            <br>
+            Unique Courses: Machine Learning, Compiler Construction, Parallel Programming & Networks.<br>
+            <b>Honors:</b> Summa cum laude & Computer Science Undergraduate Academic Excellence Award
+          </p>
+
+        </div>
+        <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120"
+            height="120" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-body-secondary rounded-3 py-3 my-3 opacity-85">
+      <div class="row p-2">
+        <div class="col-lg-8">
+          <h2 class="fw-bold">Texas State University</h2>
+          <h4 class="text-secondary">Bachelor of Business Administration in Management</h4>
+          <p class="lead mb-0">
+            Specialized in entrepreneurial studies.<br>
+            <b>Honors:</b> Dean's List Multiple Semesters
+          </p>
+
+        </div>
+        <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
+          <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120"
+            height="120" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- projects  -->
+  <div id="projects" class="py-5 border-black border-top">
+
+    <h1 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Projects</h1>
+
+    <div class="container px-4 bg-body-secondary mt-3 rounded-3">
+      <div class="p-3 text-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid profile-img" alt="profile image" width="350" height="500" loading="lazy">
+            <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="project image" width="200"
+              height="100" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+            <h1 class="display-8 fw-bold lh-1">P1</h1>
             <p class="lead">
-                Awesome engineer summary I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                TinDog. Woof.I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                TinDog. Woof.I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                TinDog. Woof.I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                TinDog. Woof.
+              Awesome engineer summary I no longer have to sniff other dogs for love. I've found the hottest Corgi on
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="btn btn-primary btn-lg px-4 me-md-2" href="assets/dylan_messerly_resume.pdf" download>Download Resumé</a>
-              <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
-            </div>
           </div>
         </div>
-      </div>
-      <!-- education  -->
-      <div class="container px-4 py-5 bg-body-tertiary mt-5 rounded-3">
-          <div class="p-5 text-center">
-            <h1 class="text-body-emphasis">Education</h1>
-          <p class="lead">
-            This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
-          </p>
-        </div>
-      </div>
-
-      <div class="container px-4 bg-body-tertiary mt-5 rounded-3">
-        <div class="p-5 text-center">
-          <h1 class="text-body-emphasis mb-5">Projects</h1>
-
-          <div class="row flex-lg-row-reverse align-items-center g-5 border-bottom">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="profile image" width="350" height="200" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-              <h1 class="display-8 fw-bold lh-1 mb-3">P1</h1>
-              <p class="lead">
-                  Awesome engineer summary I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-              </p>
-            </div>
-          </div>
-
-          
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-bottom">
-              <div class="col-lg-6">
-                  <h1 class="display-8 fw-bold  lh-1 mb-3">P2</h1>
-                  <p class="lead">
-                      Awesome engineer summary I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                    </p>
-                </div>
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="profile image" width="350" height="200" loading="lazy">
-                </div>
-          </div>
-
       </div>
     </div>
 
-      <!-- footer  -->
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Yours Truly</span>
+    <div class="container px-4 bg-body-secondary mt-3 rounded-3">
+      <div class="p-3 text-center">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+          <div class="col-lg-6">
+            <h1 class="display-8 fw-bold lh-1">P1</h1>
+            <p class="lead">
+              Awesome engineer summary I no longer have to sniff other dogs for love. I've found the hottest Corgi on
+            </p>
           </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/CodeDTX11" target="_blank"><img src="assets/images/github.svg" height="40"></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/dylan-messerly/" target="_blank"><img src="assets/images/linkedin.svg" height="40"></a></li>
-          </ul>
-        </footer>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="assets/images/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="project image" width="200"
+              height="100" loading="lazy">
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <div id="skills" class="py-5 border-black border-top">
+
+    <h1 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Skills</h1>
+
+    <div class="d-flex flex-wrap gap-2 justify-content-center">
+      <span class="badge text-bg-primary p-2 text-black">C++</span>
+      <span class="badge text-bg-primary p-2 text-black">C</span>
+      <span class="badge text-bg-primary p-2 text-black">Java</span>
+      <span class="badge text-bg-primary p-2 text-black">JavaScript</span>
+      <span class="badge text-bg-primary p-2 text-black">Python</span>
+      <span class="badge text-bg-primary p-2 text-black">Angular</span>
+      <span class="badge text-bg-primary p-2 text-black">SpringBoot</span>
+      <span class="badge text-bg-primary p-2 text-black">SQL</span>
+      <span class="badge text-bg-primary p-2 text-black">FLask</span>
+      <span class="badge text-bg-primary p-2 text-black">APIs</span>
+      <span class="badge text-bg-primary p-2 text-black">Linux</span>
+      <span class="badge text-bg-primary p-2 text-black">HTML</span>
+      <span class="badge text-bg-primary p-2 text-black">CSS</span>
+      <span class="badge text-bg-primary p-2 text-black">Bootstrap</span>
+    </div>
+  </div>
+
+    <!-- footer  -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Yours Truly</span>
+        </div>
+
+        <a class="text-body-secondary" href="#top">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+          </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/CodeDTX11" target="_blank"><img
+                src="assets/images/github.svg" height="40"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/dylan-messerly/"
+              target="_blank"><img src="assets/images/linkedin.svg" height="40"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
+                src="assets/images/leetcode-logo.png" height="40"></a></li>
+        </ul>
+      </footer>
+    </div>
 
 </body>
 
