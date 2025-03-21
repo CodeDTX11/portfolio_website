@@ -84,8 +84,6 @@
   }
 }
 
-/* @media (max-width: 576px) {
-  #scrollToTopBtn svg {
-    height: 20px;
-  }
-} */
+body {
+  display: none; /* Hide content until image is loaded */
+}

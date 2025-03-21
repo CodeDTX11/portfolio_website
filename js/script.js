@@ -32,13 +32,6 @@ function scrollToSection(event, sectionId) {
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-    // console.log("scrollY", window.scrollY);
-    // console.log("doctop", document.documentElement.scrollTop);
-    // console.log("offHt", document.body.offsetHeight);
-    // console.log("inn", window.innerHeight );
-    // console.log("scrolly", window.scrollY);
-    // console.log("tot", window.innerHeight + window.scrollY);
-    // console.log("scrollHt", document.body.scrollHeight);
 
     if (document.documentElement.scrollTop < 100 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
         scrollToTopBtn.style.display = "none";
@@ -46,10 +39,11 @@ window.onscroll = function () {
         scrollToTopBtn.style.display = "block";
     }
 
-    // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-    //     scrollToTopBtn.style.display = "none";
-    // }
 };
+
+window.addEventListener("load", function() {
+    document.body.style.display = "block"; // Show the page after image is loaded
+});
 
 // When the user clicks on the button, scroll to the top of the document
 // scrollToTopBtn.addEventListener("click", function () {
