@@ -13,18 +13,21 @@
 
 <body class="gradient-background">
   <!-- navbar -->
-
-  <div id="navbar" class="bg-dark">
+  <button id="scrollToTopBtn" class="btn btn-primary" title="Go to top">Top</button>
+  
+  <div id="navbar" class="bg-black">
 
     <header class="d-flex flex-wrap justify-content-center py-3">
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#about-me" class="nav-link ">About Me</a></li>
-        <li class="nav-item"><a href="#education" class="nav-link ">Education</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link ">Projects</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link ">Skills</a></li>
-        <li class="nav-item"><a href="#contact-me" class="nav-link ">Contact Me</a></li>
-        <li class="nav-item"><a href="view_resume.html" class="nav-link ">View My Resumé</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'about-me')">About Me</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'education')">Education</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'projects')">Projects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'skills')">Skills</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'contact-me')">Contact Me</a>
+        </li>
+        <li class="nav-item"><a href="view_resume.html" class="nav-link">View My Resumé</a></li>
       </ul>
     </header>
   </div>
@@ -32,7 +35,7 @@
   <div>
     <div class="p-5 text-center background-img">
       <div class="container py-5">
-        <h1 class="display-1 fw-bold text-body-emphasis lh-1 mb-3">Dylan Messerly</h1>
+        <h1 class="display-1 fw-bold mb-3 text-body-emphasis">Dylan Messerly</h1>
         <p class="col-lg-8 mx-auto lead fw-bold text-black fs-2 text-decoration-underline">Software Aficionado</p>
       </div>
     </div>
@@ -62,18 +65,19 @@
           internship if that is all that is available.
           <br><br>
           I know I will be a great addition to your team. Let me know what great opportunities you have!
-          Check out my resumé and links!
+          Check out my resumé and links below!
         </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <div class="d-grid gap-2 d-flex flex-wrap justify-content-start">
           <a class="btn btn-primary btn-lg px-4 me-md-2 text-black" href="assets/dylan_messerly_resume.pdf"
             download>Download Resumé</a>
-          <a class="text-body-secondary mx-2" href="https://github.com/CodeDTX11" target="_blank"><img
-              src="assets/images/github.svg" height="50"></a>
-          <a class="text-body-secondary mx-2" href="https://www.linkedin.com/in/dylan-messerly/" target="_blank"><img
-              src="assets/images/linkedin.svg" height="50"></a>
-          <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
-              src="assets/images/leetcode-logo.png" height="50"></a>
-          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+          <div class="d-flex flex-wrap">
+            <a class="text-body-secondary mx-2" href="https://github.com/CodeDTX11" target="_blank"><img
+                src="assets/images/github.svg" height="50"></a>
+            <a class="text-body-secondary mx-2" href="https://www.linkedin.com/in/dylan-messerly/" target="_blank"><img
+                src="assets/images/linkedin.svg" height="50"></a>
+            <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
+                src="assets/images/leetcode-logo.png" height="50"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -291,16 +295,17 @@
   <div id="contact-me" class="py-5 border-black border-top">
 
     <h1 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-4">Contact Me</h1>
-    <p class="lead text-center mb-4">I use an online form submission API called <a href="https://formspree.io/" class="text-black"><b>Formspree.io</b></a> for my contact form
-      submissions.<br> Please fill out the form below to contact me, you will be briefly redirected to their success page upon
-      submission.<br>
-      I'll get back to you ASAP! Thank you!
-    </p>
+
 
     <div class="container d-flex justify-content-center align-items-center">
       <div class="row w-100">
-        <div class="col-md-6 mx-auto">
-          <form action="https://formspree.io/f/xaneewdj" method="POST">
+        <div class="col-lg-6 mx-auto">
+          <p class="lead text-center fw-medium">I use an online form submission API called <a
+              href="https://formspree.io/" class="text-black"><b>Formspree.io</b></a> for my contact form submissions.
+            Please fill out the form below to contact me. I'll get back to you ASAP!
+          </p>
+          <!-- https://formspree.io/f/xaneewdj -->
+          <form id="contactForm" action="https://formspree.io/f/xaneewdj" method="POST">
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp"
@@ -311,8 +316,11 @@
               <textarea name="body" class="form-control" id="message" rows="5" placeholder="Nice website!"
                 required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary text-black w-25" value="Send">Send</button>
+
+            <button type="submit" class="btn btn-primary text-black w-100" value="Send">Send</button>
           </form>
+          <h2 id="successMessage" class="text-center mt-5 text-black fw-medium" style="display: none;">Message sent
+            successfully!</h2>
         </div>
       </div>
     </div>
@@ -325,11 +333,12 @@
         <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Yours Truly</span>
       </div>
 
-      <a class="text-body-secondary" href="#top">
-        <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-fill"
+      <a class="text-body-secondary" href="#" onclick="scrollToSection(event, 'navbar')">
+        <svg xmlns="http://www.w3.o</a>rg/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-fill"
           viewBox="0 0 16 16">
-          <path
-            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 
+            0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 
+            .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
         </svg>
       </a>
 
@@ -343,6 +352,8 @@
       </ul>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
 
 </body>
 

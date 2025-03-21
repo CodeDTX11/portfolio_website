@@ -29,10 +29,9 @@
   border: black;
 }
 
-.background-img {
-  background-image: url('../images/Tsunami_by_hokusai.jpg');
-  opacity: 70%;
-  /* background-color: aqua; */
+.background-img111111 {
+  /* background-image: url('../images/Tsunami_by_hokusai.jpg'); */
+  /* opacity: 70%; */
   background-size: cover;
   background-position: center; /* Optional: centers the image */
   background-repeat: no-repeat; /* Prevents tiling */
@@ -43,3 +42,35 @@
   align-items: center;
   text-align: center; /* Center text horizontally */
 }
+
+.background-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height:90vh;
+  width:100%;
+}
+
+.background-img:after {
+  content:'';
+  background-image: url('../images/Tsunami_by_hokusai.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height:90vh;
+  width:100%;
+  top:0px;
+  left: 0px;
+  z-index:-1;
+  opacity: 80%; /* Here is your opacity */
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: none; /* Hidden by default */
+}
+
