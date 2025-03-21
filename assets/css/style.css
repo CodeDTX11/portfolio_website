@@ -74,3 +74,18 @@
   display: none; /* Hidden by default */
 }
 
+#scrollToTopBtn svg {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  #scrollToTopBtn svg {
+    height: 30px;
+  }
+}
+
+/* @media (max-width: 576px) {
+  #scrollToTopBtn svg {
+    height: 20px;
+  }
+} */

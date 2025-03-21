@@ -40,7 +40,7 @@ window.onscroll = function () {
     // console.log("tot", window.innerHeight + window.scrollY);
     // console.log("scrollHt", document.body.scrollHeight);
 
-    if (document.documentElement.scrollTop < 50 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    if (document.documentElement.scrollTop < 100 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
         scrollToTopBtn.style.display = "none";
     } else {
         scrollToTopBtn.style.display = "block";
@@ -52,9 +52,9 @@ window.onscroll = function () {
 };
 
 // When the user clicks on the button, scroll to the top of the document
-scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
+// scrollToTopBtn.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
+// });
